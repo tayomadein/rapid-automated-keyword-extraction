@@ -8,7 +8,7 @@ function isNumber(str) {
 // TODO: smaller functions should be extracted from this
 export function isAcceptable (phrase, minCharLength, maxWordsLength) {
   // a phrase must have a min length in characters
-  if(phrase < minCharLength) {
+  if(phrase.length < minCharLength) {
     return false
   }
   // a phrase must have a max number of words
